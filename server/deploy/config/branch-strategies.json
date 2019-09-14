@@ -1,0 +1,22 @@
+[{
+
+        "branch": "deploy/dev",
+        "project": "app-tokpets-dev",
+        "hosting-url": "https://app-tokpets-dev.web.app"
+    },
+    {
+        "branch": "deploy/test",
+        "project": "app-tokpets-dev",
+        "hosting-url": "https://app-tokpets-test.web.app"
+    },
+    {
+        "branch": "deploy/qa",
+        "project": "app-tokpets-dev",
+        "hosting-url": "https://app-tokpets-qa.web.app"
+    },
+    {
+        "branch": "deploy/prod",
+        "project": "app-tokpets-dev",
+        "hosting-url": "https://app-tokpets-prod.web.app"
+    }
+]
