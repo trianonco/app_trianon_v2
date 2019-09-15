@@ -1,118 +1,114 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
 
-  <!-- UNICODE UTF-8 -->
-  <meta charset=utf-8>
 
-  <!-- IE-EDGE Support -->
-  <meta http-equiv=X-UA-Compatible content="IE=edge">
+  <!-- ------------------------------------------------------------------- -->
+  <!-- -- BASIC HTML SETTINGS                                           -- -->
+  <!-- ------------------------------------------------------------------- -->
 
-  <!-- Viewport -->
-  <meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1, maximum-scale=5">
+    <!-- UNICODE UTF-8 -->
+    <meta charset=utf-8>
 
-  <!-- Google Site Verification --->
-  <meta name=google-site-verification content=5HINduel_YOQXQP9htAulvuPwOxlJHwcnR34iPG61Mw>
+    <!-- IE-EDGE Support -->
+    <meta http-equiv=X-UA-Compatible content="IE=edge">
 
-  <!-- Basic SEO Meta Tags -->
-  <meta name=author content=www.jlmayorga.com.co>
-  <meta name=keywords content="Tok,pets,collar,GPS,tracker,gatos,mascotas,perros,design,diseño,seguridad.">
-  <meta name=robots content="index, follow">
+    <!-- Viewport -->
+    <meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1, maximum-scale=5">
 
-  <!-- Phone Number Format Detection -->
-  <meta name=format-detection content="telephone=no">
+  <!-- ------------------------------------------------------------------- -->
 
-  <!-- Mobile Web App Capable -->
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <meta name="apple-mobile-web-app-title" content="DC-Covers">
 
-  <!-- Google Translate -->
-  <meta name=google content=notranslate>
+  <!-- ------------------------------------------------------------------- -->
+  <!-- -- GOOGLE/SEO/META TAGS                                          -- -->
+  <!-- ------------------------------------------------------------------- -->
 
-  <!-- Geo Position -->
-  <meta name=geo.region content=CO>
-  <meta name=geo.placename content=Bogot&aacute;>
-  <meta name=geo.position content=4.698699;-74.030875>
-  <meta name=ICBM content="4.698699, -74.030875">
+    <!-- SEO META TAGS -->
+    <title>TRIANON CO | PWA</title>
+    {!! app('seotools')->generate() !!}
 
-  <!-- Search Engine -->
-  <meta name="description"
-    content="TokPets is one of the smallest and lightest GPS tracking devices with a mobile app, putting your pet’s location right at your fingertips - allowing you to locate your fur-child and track their activity history on your phone or tablet.">
-  <meta name="image" content="<%= BASE_URL %>img/large_title_and_logo.ccd204ef.png">
+    <!-- Google Translate -->
+    <meta name=google content=notranslate>
 
-  <!-- Schema.org for Google -->
-  <meta itemprop="name" content="TokPet's App | Pets Accesories & GPS Tracking">
-  <meta itemprop="description"
-    content="TokPets is one of the smallest and lightest GPS tracking devices with a mobile app, putting your pet’s location right at your fingertips - allowing you to locate your fur-child and track their activity history on your phone or tablet.">
-  <meta itemprop="image" content="<%= BASE_URL %>img/large_title_and_logo.ccd204ef.png">
+    <!-- Google Site Verification --->
+    <meta name=google-site-verification content=5HINduel_YOQXQP9htAulvuPwOxlJHwcnR34iPG61Mw>
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="TokPet's App | Pets Accesories & GPS Tracking">
-  <meta name="twitter:description"
-    content="TokPets is one of the smallest and lightest GPS tracking devices with a mobile app, putting your pet’s location right at your fingertips - allowing you to locate your fur-child and track their activity history on your phone or tablet.">
+  <!-- ------------------------------------------------------------------- -->
 
-  <!-- Open Graph general (Facebook, Pinterest & Google+) -->
-  <meta name="og:title" content="TokPet's App | Pets Accesories & GPS Tracking">
-  <meta name="og:description"
-    content="TokPets is one of the smallest and lightest GPS tracking devices with a mobile app, putting your pet’s location right at your fingertips - allowing you to locate your fur-child and track their activity history on your phone or tablet.">
-  <meta name="og:image" content="<%= BASE_URL %>img/large_title_and_logo.ccd204ef.png">
-  <meta name="og:url" content="<%= BASE_URL %>">
-  <meta name="og:site_name" content="TokPets.com">
-  <meta name="og:type" content="website">
 
-  <!-- Icons & Favicons-->
-  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-  <link rel="icon" type="image/png" sizes="16x16" href="<%= BASE_URL %>img/icon/favicon-16x16.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="<%= BASE_URL %>img/icon/favicon-32x32.png">
+  <!-- ------------------------------------------------------------------- -->
+  <!-- -- PWA/STYLES META TAG                                           -- -->
+  <!-- ------------------------------------------------------------------- -->
 
-  <!-- Apple Touch Icon -->
-  <link rel="apple-touch-icon" sizes="60x60" href="<%= BASE_URL %>img/icon/apple-touch-icon/60x60.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="<%= BASE_URL %>img/icon/apple-touch-icon/76x76.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="<%= BASE_URL %>img/icon/apple-touch-icon/120x120.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="<%= BASE_URL %>img/icon/apple-touch-icon/152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="<%= BASE_URL %>img/icon/apple-touch-icon/180x180.png">
+    <!-- PWA Config -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#282828" />
+    
+    <!-- Phone Number Format Detection -->
+    <meta name=format-detection content="telephone=no">
 
-  <!-- Mask Icon -->
-  <link rel="mask-icon" href="<%= BASE_URL %>img/icon/safari-pinned-tab.svg" color="#282828">
+    <!-- Mobile Web App Capable -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="DC-Covers">
 
-  <!-- MS App Tiles  -->
-  <meta name="msapplication-TileImage" content="link to the image in static folder">
-  <meta name="msapplication-TileColor" content="#000">
+  <!-- ------------------------------------------------------------------- -->
 
-  <title>TokPet's App | Pets Accesories & GPS Tracking</title>
 
-  <meta name="theme-color" content="#282828" />
-  <link rel="manifest" href="/manifest.json" />
+  <!-- ------------------------------------------------------------------- -->
+  <!-- -- FAVICONS SETTINGS                                             -- -->
+  <!-- ------------------------------------------------------------------- -->
 
-  <script data-consolejs-channel="652835a4-cbbd-8448-6b1f-def6ccb9ab2d" src="https://remotejs.com/agent/agent.js">
-  </script>
+    <!-- Icons & Favicons-->
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="<%= BASE_URL %>img/icon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="<%= BASE_URL %>img/icon/favicon-32x32.png">
+
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" sizes="60x60" href="<%= BASE_URL %>img/icon/apple-touch-icon/60x60.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="<%= BASE_URL %>img/icon/apple-touch-icon/76x76.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="<%= BASE_URL %>img/icon/apple-touch-icon/120x120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="<%= BASE_URL %>img/icon/apple-touch-icon/152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="<%= BASE_URL %>img/icon/apple-touch-icon/180x180.png">
+
+    <!-- Mask Icon -->
+    <link rel="mask-icon" href="<%= BASE_URL %>img/icon/safari-pinned-tab.svg" color="#282828">
+
+    <!-- MS App Tiles  -->
+    <meta name="msapplication-TileImage" content="link to the image in static folder">
+    <meta name="msapplication-TileColor" content="#000"
+    >
+  <!-- ------------------------------------------------------------------- -->
+
+
+
 
 </head>
 
 <body>
+
+  <!-- ---------------------------------------------------------------------- -->
+  <!-- --  NOSCRIPT :: Is javascript is not enabled, this tag is rendered  -- -->
+  <!-- ---------------------------------------------------------------------- -->
   <noscript>
     <strong>
       We're sorry but tokpets_pwa doesn't work properly without JavaScript enabled. Please enable it to continue.
     </strong>
-    <h1>The next generation of Pet Tracking Devices<h1>
-        <p>
-          GPS Trackers are cutting edge technology that allows you to pinpoint your pets location in real time.
-          You can see a history of locations reported by the device to see every place your pet went while you were
-          away.
-          Some of these GPS Trackers even give an alert when you pet leaves a pre-determined area (geo-fence).
-          In order to transmit the GPS location from almost anywhere and anytime use of cellular data and towers are
-          required.
-          So the following would be classified as IoT and require a SIM card or cellular service of some kind.
-        </p>
-        <p>Simply attach it to your pet’s collar and track their location and activity on your phone in real-time,
-          without any subscription. Smart. Connected. Fun.
-        </p>
   </noscript>
+  <!-- ---------------------------------------------------------------------- -->
+
+
+  <!-- ---------------------------------------------------------------------- -->
+  <!-- --  APP :: Is javascript is enabled, this tag is rendered           -- -->
+  <!-- ---------------------------------------------------------------------- -->
   <div id="app"></div>
+  <!-- ---------------------------------------------------------------------- -->
+
+
+
   <!-- built files will be auto injected -->
 </body>
 

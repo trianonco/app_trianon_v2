@@ -11,9 +11,9 @@ export default new Router({
   mode: 'history',
   base: process.env.BASE_URL,
   routes: [
-    ...INDEX_ROUTES,
-    ...LOGIN_SIGNIN_ROUTES,
-    ...LOGIN_SIGNUP_ROUTES,
+    //...INDEX_ROUTES,
+    //...LOGIN_SIGNIN_ROUTES,
+    //...LOGIN_SIGNUP_ROUTES,
     {
       path: '*', // or '/index.html'
       beforeEnter: (to: any, from: any, next: any) => {

@@ -11,7 +11,8 @@ module.exports = {
     lintOnSave: false,
 
     runtimeCompiler: false,
-    productionSourceMap: false,
+    productionSourceMap: true,
+
     configureWebpack: {
         optimization: {
             splitChunks: {
@@ -22,7 +23,7 @@ module.exports = {
 
 
     pwa: {
-        name: 'Tok Pets | PWA App',
+        name: 'TRIANON | MARROQUINERIA 100% COLOMBIANA',
         themeColor: '#282828',
         msTileColor: '#000000',
         appleMobileWebAppCapable: 'yes',

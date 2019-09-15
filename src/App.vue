@@ -21,7 +21,7 @@ export default class AppView extends Vue {
 
 
 <style lang="less">
-@import '@shared/styles/main.less';
+@import './styles/main.less';
 
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
